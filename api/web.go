@@ -21,6 +21,9 @@ func PrepareRoutes() *gin.Engine{
 	/* ***		ROTAS DA APLICAÇÃO	***	*/
 	/* ********************************	*/
 	r.GET("/ping", Pong)
+	r.POST("/api/task")
+	r.GET("/api/task/:id")
+	r.GET("/api")
 	return r
 }
 
